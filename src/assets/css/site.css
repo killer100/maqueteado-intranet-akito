@@ -1,0 +1,56 @@
+/*intranet classes*/
+.intranet-panel {
+  border-radius: 0px;
+  border: 0px; }
+  .intranet-panel .panel-heading {
+    color: #fff;
+    border-radius: 0px;
+    border: 0px; }
+  .intranet-panel .panel-body {
+    border-radius: 0px;
+    background-color: #d6d0cf; }
+
+.panel-red .panel-heading {
+  background-color: #920203; }
+
+.panel-blue .panel-heading {
+  background-color: #002658; }
+
+.intranet-footer {
+  background-color: #002658; }
+
+.intranet-header-logo-left, .intranet-header-logo-right {
+  width: 80%; }
+
+.intranet-header-info {
+  border-top: solid 5px #002658; }
+
+.intranet-navbar {
+  background-color: #920203;
+  border: 0px;
+  border-radius: 0px;
+  color: #fff; }
+  .intranet-navbar .navbar-toggle {
+    border: 0px; }
+    .intranet-navbar .navbar-toggle:hover, .intranet-navbar .navbar-toggle:active, .intranet-navbar .navbar-toggle:focus {
+      background-color: #d10003 !important; }
+  .intranet-navbar .navbar-collapse {
+    border: none; }
+  .intranet-navbar ul > li a {
+    color: #fff !important; }
+  .intranet-navbar ul > li.active > a, .intranet-navbar ul > li:hover {
+    background: #d10003 !important; }
+
+.intranet-search-box {
+  border-radius: 0px;
+  border: 2px solid #443d3f; }
+  .intranet-search-box:active, .intranet-search-box:focus {
+    border: 2px solid #d10003; }
+
+.intranet-birthday-list {
+  height: 180px;
+  overflow-x: hidden;
+  overflow-y: auto; }
+  .intranet-birthday-list .birthday-list-item {
+    border-bottom: solid 1px white;
+    border-bottom-style: dashed; }

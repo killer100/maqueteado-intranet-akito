@@ -1,0 +1,91 @@
+@import "variables";
+
+/*intranet classes*/
+.intranet-panel{
+    border-radius: 0px;
+    border: 0px;
+    .panel-heading{
+        color: $white-text;
+        border-radius: 0px;
+        border: 0px;
+    }
+    .panel-body{
+        border-radius: 0px;
+        background-color: $gray; 
+    }
+    
+}
+
+.panel-red{    
+    .panel-heading{
+        background-color: $red-dark;
+
+    }
+}
+.panel-blue{
+    .panel-heading{
+        background-color: $blue-dark;
+    }
+}
+
+.intranet-footer{
+    background-color: $blue-dark; 
+}
+
+.intranet-header-logo-left, .intranet-header-logo-right{
+    width: 80%;
+}
+
+.intranet-header-info{
+    border-top:solid 5px $blue-dark; 
+}
+
+.intranet-navbar{
+    background-color: $menu-background;
+    border: 0px;
+    border-radius: 0px;
+    color: $menu-text-color;
+
+    .navbar-toggle{
+        border: 0px;
+        &:hover, &:active, &:focus{
+            background-color: $red-active!important;
+        }
+    }
+
+    .navbar-collapse{
+        border: none;
+    }
+
+    ul>li{
+        
+        a{
+            color: $white-text!important;
+        }
+
+        &.active>a, &:hover{
+            background: $red-active!important;
+            
+        }
+    }
+    
+}
+
+.intranet-search-box{
+    border-radius: 0px;
+    border: 2px solid $input-border-color;
+    &:active, &:focus{
+        border: 2px solid $red-active;
+    }
+}
+
+.intranet-birthday-list{
+    height: 180px;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    .birthday-list-item{
+        border-bottom: solid 1px white;
+        border-bottom-style: dashed;
+    }
+}
