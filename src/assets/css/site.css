@@ -62,7 +62,9 @@
     top: -90px;
     width: 120px;
     height: 120px;
-    left: calc(33%); } }
+    left: 0;
+    right: 0;
+    margin: 0 auto; } }
 
 @media (max-width: 991px) {
   div.user-menu img.user-menu-image {
@@ -100,3 +102,43 @@ div.user-menu div.user-menu-body {
       background: #ea8800; }
   div.user-menu div.user-menu-body ul.user-menu-options li.active span.square {
     background: #ea8800; }
+
+div.options-list div.option-title {
+  background: #920203;
+  width: 155px;
+  height: 155px;
+  position: absolute;
+  top: 25px;
+  padding: 15px; }
+  div.options-list div.option-title span.option-title-square {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: #ea8800; }
+  div.options-list div.option-title .option-title-text {
+    color: #fff;
+    position: absolute;
+    bottom: 0; }
+
+div.options-list ul {
+  margin-top: 75px;
+  list-style: none; }
+  div.options-list ul li {
+    margin: 10px 20px 10px 20px; }
+  div.options-list ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #110e01; }
+    div.options-list ul li a:hover span.rectangle-blue {
+      background: #ea8800; }
+  div.options-list ul li a span.rectangle-blue {
+    background: #002658;
+    display: inline-block;
+    width: 150px;
+    height: 15px;
+    margin-right: 10px;
+    margin-bottom: -2px; }
+
+div.content-body {
+  background: #eae7e9;
+  padding: 25px; }

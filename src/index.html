@@ -21,10 +21,6 @@
 
 <body>
 
-
-
-
-
     <div class="container-fluid">
         <div class="row-fluid">
             <div class="col-md-3 text-center">
@@ -83,157 +79,183 @@
 
 
     <div class="container-fuid" style="margin-bottom: 65px">
-        
-            <div class="row-fluid" style="padding-bottom:15px;">
 
-                <div class="col-lg-7 col-md-6 col-sm-12 col-lg-push-2 col-md-push-3" style="border:solid red 2px;">
-                    centro
+        <div class="row-fluid" style="padding-bottom:15px;">
+
+            <div class="col-lg-7 col-md-6 col-sm-12 col-lg-push-2 col-md-push-3 content-body">
+                <div ng-app="app">
+                    <ui-view></ui-view>
+
                 </div>
+            </div>
 
-                <div class="col-lg-2 col-md-3 col-sm-6 col-lg-pull-7 col-md-pull-6">
+            <div class="col-lg-2 col-md-3 col-sm-6 col-lg-pull-7 col-md-pull-6">
 
-                    <div class="panel panel-default intranet-panel panel-red">
-                        <div class="panel-heading text-right p-b-5 p-t-5">
-                            <h4 class="title m-t-5 m-b-5">directorio</h4>
-                        </div>
-                        <div class="panel-body">
+                <div class="panel panel-default intranet-panel panel-red">
+                    <div class="panel-heading text-right p-b-5 p-t-5">
+                        <h4 class="title m-t-5 m-b-5">directorio</h4>
+                    </div>
+                    <div class="panel-body">
 
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="input-group">
-                                        <input type="text" class="form-control intranet-search-box">
-                                        <span class="input-group-addon icon-input-group font-18">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="input-group">
+                                    <input type="text" class="form-control intranet-search-box">
+                                    <span class="input-group-addon icon-input-group font-18">
                                         <i class="glyphicon glyphicon-search"></i>
                                     </span>
-                                    </div>
                                 </div>
                             </div>
-
-                            <div class="text-center m-t-10">
-                                <span class="text-black font-12">Busqueda por: nombre, apellido, anexo, dependencia</span>
-                            </div>
-
-                            <div class="intranet-contact-list m-t-10">
-                                <div class="row">
-                                    <div class="col-xs-3 col-sm-4">
-                                        <img class="img-contact" src="/assets/img/contacto.png" alt="">
-                                    </div>
-                                    <div class="col-xs-9 col-sm-8">
-                                        <p class="text-bold no-padding no-margin">EDUARDO GARBIEL MARSANO GONZALES</p>
-                                        <span class="text-bold">Informática</span>
-                                    </div>
-                                    <div class="col-xs-12 m-t-15">
-                                        <div class="text-bold link-color text-truncate">emarsano@lacaja.com.pe</div>
-                                        <div>
-                                            <span class="text-bold link-color">anexo: </span>
-                                            <span class="sp-note font-20">2245</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
                         </div>
+
+                        <div class="text-center m-t-10">
+                            <span class="text-black font-12">Busqueda por: nombre, apellido, anexo, dependencia</span>
+                        </div>
+
+                        <div class="intranet-contact-list m-t-10">
+                            <div class="row">
+                                <div class="col-xs-3 col-sm-4">
+                                    <img class="img-contact" src="/assets/img/contacto.png" alt="">
+                                </div>
+                                <div class="col-xs-9 col-sm-8">
+                                    <p class="text-bold no-padding no-margin">EDUARDO GARBIEL MARSANO GONZALES</p>
+                                    <span class="text-bold">Informática</span>
+                                </div>
+                                <div class="col-xs-12 m-t-15">
+                                    <div class="text-bold link-color text-truncate">emarsano@lacaja.com.pe</div>
+                                    <div>
+                                        <span class="text-bold link-color">anexo: </span>
+                                        <span class="sp-note font-20">2245</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-
-                    <div class="panel panel-default intranet-panel panel-blue">
-                        <div class="panel-heading text-right p-b-5 p-t-5">
-                            <h4 class="title m-t-5 m-b-5">Cumpleaños</h4>
-                        </div>
-                        <div class="panel-body">
-                            <div class="intranet-birthday-list m-t-5">
-                                <div class="row birthday-list-item p-b-5 p-t-5">
-                                    <div class="col-md-12">
-                                        <div class="title text-bold text-truncate">MILAGROS ROJAS RAMIREZ</div>
-                                        <div>
-                                            <span class="sp-note">Oficina</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row birthday-list-item p-b-5 p-t-5">
-                                    <div class="col-md-12">
-                                        <div class="title text-bold text-truncate">MIGUEL REVILLA GALDO</div>
-                                        <div>
-                                            <span class="sp-note">Oficina</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row birthday-list-item p-b-5 p-t-5">
-                                    <div class="col-md-12">
-                                        <div class="title text-bold text-truncate">DIANA FRANCO SUAREZ</div>
-                                        <div>
-                                            <span class="sp-note">Oficina</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row birthday-list-item p-b-5 p-t-5">
-                                    <div class="col-md-12">
-                                        <div class="title text-bold text-truncate">LIZ MAURICIO FLORES</div>
-                                        <div>
-                                            <span class="sp-note">Oficina</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row birthday-list-item p-b-5 p-t-5">
-                                    <div class="col-md-12">
-                                        <div class="title text-bold text-truncate">NIEVES SONEHUA CASTILLO</div>
-                                        <div>
-                                            <span class="sp-note">Oficina</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row birthday-list-item p-b-5 p-t-5">
-                                    <div class="col-md-12">
-                                        <div class="title text-bold text-truncate">JUAN PEREZ CASTILLO</div>
-                                        <div>
-                                            <span class="sp-note">Oficina</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
                 </div>
 
-                <div class="col-lg-3 col-md-3 col-sm-6">
-                    <div class="user-menu">
-                        <div>
-                            <img src="/assets/img/usuario.png" alt="" class="user-menu-image">
-                            <div class="user-menu-heading">
-                                <div class="hidden-sm hidden-xs" style="height: 25px;"></div>
-                                <div>Edilberto Iparraguirre</div>
-                                <span class="title">Gerencia de informática</span>
+                <div class="panel panel-default intranet-panel panel-blue">
+                    <div class="panel-heading text-right p-b-5 p-t-5">
+                        <h4 class="title m-t-5 m-b-5">Cumpleaños</h4>
+                    </div>
+                    <div class="panel-body">
+                        <div class="intranet-birthday-list m-t-5">
+                            <div class="row birthday-list-item p-b-5 p-t-5">
+                                <div class="col-md-12">
+                                    <div class="title text-bold text-truncate">MILAGROS ROJAS RAMIREZ</div>
+                                    <div>
+                                        <span class="sp-note">Oficina</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row birthday-list-item p-b-5 p-t-5">
+                                <div class="col-md-12">
+                                    <div class="title text-bold text-truncate">MIGUEL REVILLA GALDO</div>
+                                    <div>
+                                        <span class="sp-note">Oficina</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row birthday-list-item p-b-5 p-t-5">
+                                <div class="col-md-12">
+                                    <div class="title text-bold text-truncate">DIANA FRANCO SUAREZ</div>
+                                    <div>
+                                        <span class="sp-note">Oficina</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row birthday-list-item p-b-5 p-t-5">
+                                <div class="col-md-12">
+                                    <div class="title text-bold text-truncate">LIZ MAURICIO FLORES</div>
+                                    <div>
+                                        <span class="sp-note">Oficina</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row birthday-list-item p-b-5 p-t-5">
+                                <div class="col-md-12">
+                                    <div class="title text-bold text-truncate">NIEVES SONEHUA CASTILLO</div>
+                                    <div>
+                                        <span class="sp-note">Oficina</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row birthday-list-item p-b-5 p-t-5">
+                                <div class="col-md-12">
+                                    <div class="title text-bold text-truncate">JUAN PEREZ CASTILLO</div>
+                                    <div>
+                                        <span class="sp-note">Oficina</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="user-menu-body">
-                            <ul class="user-menu-options">
-                                <li><a href="#">documentos informativos <span class="square"></span></a></li>
-                                <li class="active"><a href="#">áreas <span class="square"></span></a></li>
-                                <li><a href="#">diversos <span class="square"></span></a></li>
-                                <li><a href="#">comités de la caja <span class="square"></span></a></li>
-                                <li><a href="#">sistema de gestión <span class="square"></span></a></li>
-                            </ul>
-                        </div>
+
                     </div>
                 </div>
 
             </div>
-       
+
+            <div class="col-lg-3 col-md-3 col-sm-6">
+                <div class="user-menu">
+                    <div>
+                        <img src="/assets/img/usuario.png" alt="" class="user-menu-image">
+                        <div class="user-menu-heading">
+                            <div class="hidden-sm hidden-xs" style="height: 25px;"></div>
+                            <div>Edilberto Iparraguirre</div>
+                            <span class="title">Gerencia de informática</span>
+                        </div>
+                    </div>
+                    <div class="user-menu-body">
+                        <ul class="user-menu-options">
+                            <li>
+                                <a href="#">documentos normativos
+                                    <span class="square"></span>
+                                </a>
+                            </li>
+                            <li class="active">
+                                <a href="#">áreas
+                                    <span class="square"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">diversos
+                                    <span class="square"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">comités de la caja
+                                    <span class="square"></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">sistema de gestión
+                                    <span class="square"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
     </div>
     <nav class="navbar navbar-default navbar-fixed-bottom intranet-footer hidden-xs hidden-sm">
         <div class="container">
-
+            <div ng-app="app"></div>
         </div>
     </nav>
 
     <script src="/assets/js/jquery.min.js"></script>
     <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/angular.min.js"></script>
+    <script src="/assets/js/angular-ui-router.min.js"></script>
+    <script src="/assets/js/app.js"></script>
 </body>
 
 </html>

@@ -93,12 +93,14 @@
 div.user-menu{
     @media (min-width: 992px) {
         img.user-menu-image{
-        box-shadow: 5px 5px 18px #222;
+            box-shadow: 5px 5px 18px #222;
             position:absolute;
             top: -90px;
             width:120px;
             height:120px;
-            left: calc(33%);
+            left: 0;
+            right: 0;
+            margin: 0 auto;
         }
     }
 
@@ -159,5 +161,58 @@ div.user-menu{
         
     }
 
+}
+
+div.options-list{
+    div.option-title{
+        background: $red-dark;
+        width:155px;
+        height: 155px;
+        position: absolute;
+        top:25px;
+        padding:15px;
+        span.option-title-square{
+            display: block;
+            width: 20px;
+            height: 20px;
+            background: $list-option-active;
+        }
+
+        .option-title-text{
+            color: $white-text;
+            position: absolute;
+            bottom:0;
+        }
+    }
+    ul{
+        margin-top:75px;
+        list-style: none;
+        li{
+            margin: 10px 20px 10px 20px;
+        }
+        li a{
+            text-decoration: none;
+            font-weight: bold;
+            color: $black-text;
+            &:hover{
+                span.rectangle-blue{
+                    background: $list-option-active;
+                }
+            }
+        }
+        li a span.rectangle-blue{
+            background: $blue-dark;
+            display: inline-block;
+            width: 150px;
+            height: 15px;
+            margin-right: 10px;
+            margin-bottom: -2px;
+        }
+    }
+}
+
+div.content-body{
+    background: $body-content-background;
+    padding: 25px;
 }
 
