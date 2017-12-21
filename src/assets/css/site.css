@@ -1,3 +1,11 @@
+@media (min-width: 992px) {
+  html {
+    margin-bottom: 50px !important; } }
+
+@media (max-width: 991px) {
+  div.content-body {
+    margin-bottom: 20px; } }
+
 /*intranet classes*/
 .intranet-panel {
   border-radius: 0px;
@@ -87,15 +95,21 @@ div.user-menu div.user-menu-body {
     padding-top: 10px;
     padding-bottom: 10px; }
   div.user-menu div.user-menu-body ul.user-menu-options li a {
+    display: block;
     text-transform: uppercase;
     color: #fff;
     text-decoration: none; }
+    div.user-menu div.user-menu-body ul.user-menu-options li a span.menu-item-text {
+      display: inline-block;
+      max-width: 80%;
+      text-align: right;
+      vertical-align: middle; }
     div.user-menu div.user-menu-body ul.user-menu-options li a span.square {
-      margin-right: -15px;
-      margin-bottom: -5px;
       margin-left: 15px;
       display: inline-block;
+      max-width: 20%;
       background: #920203;
+      vertical-align: middle;
       width: 20px;
       height: 20px; }
     div.user-menu div.user-menu-body ul.user-menu-options li a:hover span.square {
@@ -104,24 +118,42 @@ div.user-menu div.user-menu-body {
     background: #ea8800; }
 
 div.options-list div.option-title {
-  background: #920203;
-  width: 155px;
-  height: 155px;
-  position: absolute;
-  top: 25px;
-  padding: 15px; }
+  background: #920203; }
+  div.options-list div.option-title .option-title-text {
+    color: #fff;
+    word-wrap: break-word; }
+  @media (max-width: 991px) {
+    div.options-list div.option-title {
+      width: 100%; }
+      div.options-list div.option-title .option-title-text {
+        max-width: 80%;
+        display: inline-block; }
+      div.options-list div.option-title span.option-title-square {
+        display: inline-block;
+        max-width: 20%;
+        vertical-align: top;
+        margin: 22px 10px 0px 10px; } }
+  @media (min-width: 992px) {
+    div.options-list div.option-title {
+      min-width: 140px;
+      max-width: 100%;
+      min-height: 140px;
+      padding: 15px;
+      display: inline-block; }
+      div.options-list div.option-title .option-title-text {
+        margin-top: 60px; }
+      div.options-list div.option-title span.option-title-square {
+        display: block;
+        position: relative;
+        top: 0; } }
   div.options-list div.option-title span.option-title-square {
-    display: block;
     width: 20px;
     height: 20px;
     background: #ea8800; }
-  div.options-list div.option-title .option-title-text {
-    color: #fff;
-    position: absolute;
-    bottom: 0; }
 
 div.options-list ul {
-  margin-top: 75px;
+  margin-left: -50px;
+  margin-top: 30px;
   list-style: none; }
   div.options-list ul li {
     margin: 10px 20px 10px 20px; }
@@ -132,13 +164,34 @@ div.options-list ul {
     div.options-list ul li a:hover span.rectangle-blue {
       background: #ea8800; }
   div.options-list ul li a span.rectangle-blue {
+    vertical-align: middle;
     background: #002658;
     display: inline-block;
-    width: 150px;
-    height: 15px;
-    margin-right: 10px;
-    margin-bottom: -2px; }
+    margin-right: 10px; }
+    @media (min-width: 992px) {
+      div.options-list ul li a span.rectangle-blue {
+        width: 120px;
+        height: 15px; } }
+    @media (max-width: 991px) {
+      div.options-list ul li a span.rectangle-blue {
+        width: 15px;
+        height: 15px; } }
 
 div.content-body {
   background: #eae7e9;
-  padding: 25px; }
+  padding: 20px; }
+
+div.content-body-header-aux {
+  height: 20px;
+  background: #eae7e9;
+  width: 100%;
+  margin-top: -20px; }
+
+.list-option-text {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 60%; }
+
+@media (max-width: 767px) {
+  .content-column {
+    padding: 0px !important; } }

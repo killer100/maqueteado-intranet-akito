@@ -1,5 +1,19 @@
 @import "variables";
 
+@media (min-width: 992px) {
+    html{
+        margin-bottom: 50px!important; 
+    }
+
+    div.content-body{        
+    }
+}
+@media (max-width: 991px) {
+
+    div.content-body{        
+        margin-bottom: 20px;
+    }
+}
 /*intranet classes*/
 .intranet-panel{
     border-radius: 0px;
@@ -133,15 +147,22 @@ div.user-menu{
             }
 
             li a{
+                display: block;
                 text-transform: uppercase;
                 color: $white-text;
                 text-decoration: none;
-                span.square{
-                    margin-right:-15px;
-                    margin-bottom:-5px;
+                span.menu-item-text{
+                    display: inline-block;
+                    max-width: 80%;
+                    text-align: right;
+                    vertical-align: middle;
+                }
+                span.square{                    
                     margin-left:15px;
                     display: inline-block;
+                    max-width: 20%;
                     background: $red-dark;
+                    vertical-align: middle;
                     width:20px;
                     height:20px;
                 }
@@ -165,27 +186,52 @@ div.user-menu{
 
 div.options-list{
     div.option-title{
+        
         background: $red-dark;
-        width:155px;
-        height: 155px;
-        position: absolute;
-        top:25px;
-        padding:15px;
+
+        .option-title-text{
+            color: $white-text;
+            word-wrap: break-word;
+        }
+
+        @media (max-width: 991px) {
+            width:100%;
+            .option-title-text{
+                max-width:80%;
+                display: inline-block;
+            }
+            span.option-title-square{
+                display: inline-block;
+                max-width:20%;
+                vertical-align: top;
+                margin: 22px 10px 0px 10px;
+            }
+        }
+        @media (min-width: 992px) {
+            min-width:140px;
+            max-width: 100%;
+            min-height: 140px;  
+            padding:15px;
+            display: inline-block;
+            .option-title-text{
+                margin-top: 60px;
+            }
+            span.option-title-square{
+                display: block;
+                position: relative;
+                top: 0;
+            }
+        }
+        
         span.option-title-square{
-            display: block;
             width: 20px;
             height: 20px;
             background: $list-option-active;
         }
-
-        .option-title-text{
-            color: $white-text;
-            position: absolute;
-            bottom:0;
-        }
     }
     ul{
-        margin-top:75px;
+        margin-left:-50px;
+        margin-top:30px;
         list-style: none;
         li{
             margin: 10px 20px 10px 20px;
@@ -201,18 +247,44 @@ div.options-list{
             }
         }
         li a span.rectangle-blue{
+            @media (min-width: 992px) {
+                width: 120px;
+                height: 15px;
+            }
+        
+            @media (max-width: 991px) {
+                width: 15px;
+                height: 15px;
+            }
+            
+            vertical-align: middle;
             background: $blue-dark;
-            display: inline-block;
-            width: 150px;
-            height: 15px;
+            display: inline-block;         
             margin-right: 10px;
-            margin-bottom: -2px;
         }
     }
 }
 
 div.content-body{
     background: $body-content-background;
-    padding: 25px;
+    padding: 20px;
 }
 
+div.content-body-header-aux{
+    height:20px;
+    background: $body-content-background;
+    width:100%;
+    margin-top:-20px;
+}
+
+.list-option-text{
+    display: inline-block;
+    vertical-align: middle;
+    max-width:60%;
+}
+
+.content-column{
+    @media (max-width: 767px) {
+        padding: 0px!important;
+    }
+}

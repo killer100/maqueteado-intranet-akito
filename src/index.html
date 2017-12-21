@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Intranet</title>
     <!-- Bootstrap -->
@@ -78,25 +78,23 @@
 
 
 
-    <div class="container-fuid" style="margin-bottom: 65px">
+    <div class="container-fuid clearfix">
 
-        <div class="row-fluid" style="padding-bottom:15px;">
+        <div class="row-fluid clearfix">
 
-            <div class="col-lg-7 col-md-6 col-sm-12 col-lg-push-2 col-md-push-3 content-body">
-                <div ng-app="app">
+            <div class="col-lg-7 col-md-6 col-sm-12 col-lg-push-2 col-md-push-3 content-column">
+                <div class="content-body-header-aux hidden-sm hidden-xs"></div>
+                <div ng-app="app" class="content-body" style="height: 100%;">
                     <ui-view></ui-view>
-
                 </div>
             </div>
 
-            <div class="col-lg-2 col-md-3 col-sm-6 col-lg-pull-7 col-md-pull-6">
-
+            <div class="col-lg-2 col-md-3 col-sm-6 col-lg-pull-7 col-md-pull-6 content-column">
                 <div class="panel panel-default intranet-panel panel-red">
                     <div class="panel-heading text-right p-b-5 p-t-5">
                         <h4 class="title m-t-5 m-b-5">directorio</h4>
                     </div>
                     <div class="panel-body">
-
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="input-group">
@@ -200,7 +198,7 @@
 
             </div>
 
-            <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="col-lg-3 col-md-3 col-sm-6 content-column">
                 <div class="user-menu">
                     <div>
                         <img src="/assets/img/usuario.png" alt="" class="user-menu-image">
@@ -213,27 +211,32 @@
                     <div class="user-menu-body">
                         <ul class="user-menu-options">
                             <li>
-                                <a href="#">documentos normativos
+                                <a href="#">
+                                    <span class="menu-item-text">documentos normativos</span>
                                     <span class="square"></span>
                                 </a>
                             </li>
                             <li class="active">
-                                <a href="#">áreas
+                                <a href="#">
+                                    <span class="menu-item-text">áreas</span>
                                     <span class="square"></span>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">diversos
+                                <a href="#">
+                                    <span class="menu-item-text">diversos</span>
                                     <span class="square"></span>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">comités de la caja
+                                <a href="#">
+                                    <span class="menu-item-text">comités de la caja</span>
                                     <span class="square"></span>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">sistema de gestión
+                                <a href="#">
+                                    <span class="menu-item-text">sistema de gestión</span>
                                     <span class="square"></span>
                                 </a>
                             </li>
