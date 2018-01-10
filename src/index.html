@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="app">
 
 <head>
     <meta charset="utf-8">
@@ -57,13 +57,13 @@
             </div>
             <div class="collapse navbar-collapse" id="navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li class="active">
+                    <li>
                         <a href="#">PORTAL
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
-                    <li>
-                        <a href="#">INICIO</a>
+                    <li ui-sref-active="active">
+                        <a ui-sref="home">INICIO</a>
                     </li>
                     <li>
                         <a href="#">MAPA DE SITIO</a>
@@ -84,7 +84,7 @@
 
             <div class="col-lg-7 col-md-6 col-sm-12 col-lg-push-2 col-md-push-3 content-column">
                 <div class="content-body-header-aux hidden-sm hidden-xs"></div>
-                <div ng-app="app" class="content-body" style="height: 100%;">
+                <div class="content-body" style="height: 100%;">
                     <ui-view></ui-view>
                 </div>
             </div>
@@ -210,32 +210,32 @@
                     </div>
                     <div class="user-menu-body">
                         <ul class="user-menu-options">
-                            <li>
-                                <a href="#">
+                            <li ui-sref-active="active">
+                                <a ui-sref="documentos-normativos">
                                     <span class="menu-item-text">documentos normativos</span>
                                     <span class="square"></span>
                                 </a>
                             </li>
-                            <li class="active">
-                                <a href="#">
+                            <li ui-sref-active="active">
+                                <a ui-sref="areas">
                                     <span class="menu-item-text">áreas</span>
                                     <span class="square"></span>
                                 </a>
                             </li>
-                            <li>
-                                <a href="#">
+                            <li ui-sref-active="active">
+                                <a ui-sref="diversos">
                                     <span class="menu-item-text">diversos</span>
                                     <span class="square"></span>
                                 </a>
                             </li>
-                            <li>
-                                <a href="#">
+                            <li ui-sref-active="active">
+                                <a ui-sref="comites-cajas">
                                     <span class="menu-item-text">comités de la caja</span>
                                     <span class="square"></span>
                                 </a>
                             </li>
-                            <li>
-                                <a href="#">
+                            <li ui-sref-active="active">
+                                <a ui-sref="sistemas-gestion">
                                     <span class="menu-item-text">sistema de gestión</span>
                                     <span class="square"></span>
                                 </a>

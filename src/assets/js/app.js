@@ -18,6 +18,12 @@
                 templateUrl: 'pages/areas.html'
             }
 
+            var diversosState = {
+                name: 'diversos',
+                url: '/diversos',
+                templateUrl: 'pages/diversos.html'
+            }
+
             var comitesCajaState = {
                 name: 'comites-cajas',
                 url: '/comites-cajas',
@@ -32,7 +38,8 @@
 
             $stateProvider.state(homeState);
             $stateProvider.state(documentosNotmativosState);
-            $stateProvider.state(areasState);
+            $stateProvider.state(areasState);            
+            $stateProvider.state(diversosState);
             $stateProvider.state(comitesCajaState);
             $stateProvider.state(sistemasGestionState);
             $urlRouterProvider.otherwise("/");
